@@ -1,0 +1,8 @@
+#photo {
+        overflow: hidden;
+        position: relative;
+    }
+#photo img {
+    position: fixed;
+    }
+    
