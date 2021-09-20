@@ -1,15 +1,29 @@
+.wrapper {
+      margin: auto;
+      width: 100%;
+}
+
 #photo {
-        overflow: hidden;
-        position: relative;
-    }
+      overflow: hidden;
+      position: relative;
+}
+
 #photo img {
-    position: fixed;
-    }
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-font-smoothing: none;
+      -webkit-font-smoothing: antialiased;
+      -webkit-font-smoothing: subpixel-antialiased;
+      width: 90%;
+}
 
 #stop img {
- width: 60%;
+      width: 60%;
 }
+
 .buttom {
-    color:gray;
-    font-size: 30px;;
+      color: gray;
+      font-size: 30px;
 }
