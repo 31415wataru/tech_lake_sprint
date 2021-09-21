@@ -4,7 +4,7 @@
 <head>
       <meta charset="utf-8">
       <link rel="stylesheet" href="CSS/style.css" />
-      <title>3-1授業</title>
+      <title>琵琶湖</title>
       <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
       <script type="text/javascript">
             $(function () {
@@ -12,12 +12,12 @@
                   var fadeSpeed = 2750;
                   var switchDelay = 2000;
                   //fadeSpeedはアニメーションの速さ
-                  $(setImg).children('a').css({ opacity: '1' });
+                  $(setImg).children('img').css({ opacity: '1' });
                   //childrenはjQueryの子要素
-                  $(setImg + ' a:first').stop().animate({ opacity: '1', zIndex: '20' }, fadeSpeed);
+                  $(setImg + ' img:first').stop().animate({ opacity: '1', zIndex: '20' }, fadeSpeed);
                   //zIndexは画像の重なり方を調節
                   setInterval(function () {
-                        $(setImg + ' a:first-child').animate({ opacity: '0' }, fadeSpeed).next('a').animate({ opacity: '0.8' }, fadeSpeed).end().appendTo(setImg);
+                        $(setImg + ' img:first-child').animate({ opacity: '0' }, fadeSpeed).next('img').animate({ opacity: '0.8' }, fadeSpeed).end().appendTo(setImg);
                   }, switchDelay);
                   //opacityは後ろの画像の透明度。前は1番前の画像の透明度
             });
@@ -27,15 +27,20 @@
 <body>
       <div class="wrapper">
             <div id="photo">
-                  <a href="stop.html"><img src="img/00.jpg" alt="" /></a>
-                  <a href="stop.html"><img src="img/01.jpg" alt="" /></a>
-                  <a href="stop.html"><img src="img/02.jpg" alt="" /></a>
-                  <a href="stop.html"><img src="img/03.jpg" alt="" /></a>
-                  <a href="stop.html"><img src="img/04.jpg" alt="" /></a>
-                  <a href="stop.html"><img src="img/05.jpg" alt="" /></a>
-                  <a href="stop.html"><img src="img/06.jpg" alt="" /></a>
-                  <a href="stop.html"><img src="img/07.jpg" alt="" /></a>
+                  <img src="img/00.jpg" alt="" />
+                  <img src="img/01.jpg" alt="" />
+                  <img src="img/02.jpg" alt="" />
+                  <img src="img/03.jpg" alt="" />
+                  <img src="img/04.jpg" alt="" />
+                  <img src="img/05.jpg" alt="" />
+                  <img src="img/06.jpg" alt="" />
+                  <img src="img/07.jpg" alt="" />
             </div>
+            <a href="stop.html">
+                  <div class="press">
+                        <img src="https://illalet.com/wp-content/uploads/illust/16_2_368.png" alt="stop">
+                  </div>
+            </a>
       </div>
 </body>
 
