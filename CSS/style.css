@@ -23,6 +23,18 @@
       width: 60%;
 }
 
+.press {
+      width: 80px;
+      position: fixed;
+      top: 30px;
+      right: 50px;
+      z-index: 120;
+}
+
+.press img {
+      width: 100%;
+}
+
 .buttom {
       color: gray;
       font-size: 30px;
